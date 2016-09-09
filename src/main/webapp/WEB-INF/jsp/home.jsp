@@ -17,7 +17,7 @@
 	</style>
 	<script type="text/javascript">
 	var addSkillForm = function(){
-		$("#skillsContainer").append('<form:form class="form-inline" style="text-align: center;" commandName="skill" modelAttribute="skill" action="/home" method="POST">' +
+		$("#skillsContainer").append('<form:form class="form-inline" style="text-align: center; padding-top: 10px" commandName="skill" modelAttribute="skill" action="/home" method="POST">' +
 				'<div id="skillsContainer" class="form-group">' +
 				'Skill <input type="text" id="name" name="name" class="form-control"/> ' + 
 				'Rating <input type="text" id="rating" name="rating" class="form-control"/> ' +
@@ -37,7 +37,7 @@
 				  <div class="panel-heading">Add A New Skill</div>
 				  <div class="panel-body">
 				  <a class="btn btn-default" onclick="addSkillForm()">Add New Skill</a>
-					<form:form class="form-inline" style="text-align: center; padding-top: 10px"
+					<form:form class="form-inline" style="text-align: center; padding: 10px 0 0 0;"
 						commandName="skill" modelAttribute="skill" action="/home" method="POST">
 						<div id="skillsContainer" class="form-group">
 							Skill <form:input path="name" class="form-control"/>
