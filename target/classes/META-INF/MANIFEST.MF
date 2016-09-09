@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Implementation-Title: Spring Exercise
 Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: USER
+Built-By: Marcelino
 Implementation-Vendor-Id: com.ideyatech
 Build-Jdk: 1.8.0_101
 Implementation-URL: http://projects.spring.io/spring-boot/spring-exerc

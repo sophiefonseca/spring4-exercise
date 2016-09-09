@@ -2,15 +2,39 @@ package com.ideyatech.springexercise.entity;
 
 import java.util.Date;
 
-public class User {
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+@Entity
+@Table(name="User")
+public class User extends BaseEntity{
 	
+	@Column(name="FIRST_NAME")
 	private String firstName;
+	
+	@Column(name="MIDDLE_NAME")
 	private String middleName;
+	
+	@Column(name="LAST_NAME")
 	private String lastName;
+	
+	@Column(name="EMAIL")
 	private String email;
+	
+	@Column(name="PASSWORD")
 	private String password;
+	
+	@Column(name="CONFIRM_PASSWORD")
 	private String confirmPassword;
+	
+	@Temporal(TemporalType.DATE)
+	@Column(name="BIRTHDATE")
 	private Date birthdate;
+	
+	@Column(name="ROLE")
 	private String role;
 	
 	public String getFirstName() {
@@ -61,7 +85,10 @@ public class User {
 	public void setConfirmPassword(String confirmPassword) {
 		this.confirmPassword = confirmPassword;
 	}
-	
-	
-
+	@Override
+	public String toString() {
+		return "User [firstName=" + firstName + ", middleName=" + middleName + ", lastName=" + lastName + ", email="
+				+ email + ", password=" + password + ", birthdate=" + birthdate
+				+ ", role=" + role + "]";
+	}
 }
