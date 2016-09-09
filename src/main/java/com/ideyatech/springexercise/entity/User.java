@@ -9,6 +9,7 @@ public class User {
 	private String lastName;
 	private String email;
 	private String password;
+	private String confirmPassword;
 	private Date birthdate;
 	private String role;
 	
@@ -54,6 +55,13 @@ public class User {
 	public void setRole(String role) {
 		this.role = role;
 	}
+	public String getConfirmPassword() {
+		return confirmPassword;
+	}
+	public void setConfirmPassword(String confirmPassword) {
+		this.confirmPassword = confirmPassword;
+	}
+	
 	
 
 }

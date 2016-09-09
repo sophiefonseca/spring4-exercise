@@ -17,7 +17,13 @@
 	</style>
 	<script type="text/javascript">
 	var addSkillForm = function(){
-		$("#skillsContainer").append('Skill <input type="text" id="name" name="name" class="form-control"/> Rating <input type="text" id="rating" name="rating" class="form-control"/> <button type="submit" class="btn btn-primary">Save</button><br/>');
+		$("#skillsContainer").append('<form:form class="form-inline" style="text-align: center;" commandName="skill" modelAttribute="skill" action="/home" method="POST">' +
+				'<div id="skillsContainer" class="form-group">' +
+				'Skill <input type="text" id="name" name="name" class="form-control"/> ' + 
+				'Rating <input type="text" id="rating" name="rating" class="form-control"/> ' +
+				'<button type="submit" class="btn btn-primary">Save</button><br/>' +
+				'</div>' +
+				'</form:form>');
 	};
 	</script>
 	</head>
