@@ -8,13 +8,12 @@
 
 <head>
 	<title>Home</title>
-	<link href="http://localhost:8080/css/bootstrap.min.css" rel="stylesheet">
+	
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 	<script src="js/jquery.js"></script>
-	<style>
-		body {
-			margin-top: 40px;
-		}
-	</style>
+	<script src="js/bootstrap.min.js"></script>
+	
 	<script type="text/javascript">
 	var addSkillForm = function(){
 		$("#skillsContainer").append('<form:form class="form-inline" style="text-align: center; padding-top: 10px" commandName="skill" modelAttribute="skill" action="/home" method="POST">' +

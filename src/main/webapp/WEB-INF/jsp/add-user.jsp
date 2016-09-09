@@ -8,8 +8,12 @@
 
 <head>
 	<title>User Registration</title>
+	
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	
 </head>
 <body>
 	<div class="container">
@@ -84,6 +88,7 @@
 							</div>
 						</div>
 						<button type="submit" class="btn btn-primary submit">Add New User</button>
+						<a href="/user/list" class="btn btn-default">Cancel</a>
 					</form:form>
 				  </div>
 				</div>

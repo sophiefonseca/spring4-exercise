@@ -8,18 +8,12 @@
 
 <head>
 	<title>Login</title>
-	<link href="http://localhost:8080/css/bootstrap.min.css" rel="stylesheet">
-	<style>
-		.login-panel {
-			
-			width: 50%;
-		  	height: 50%;
-		  	overflow: auto;
-		  	margin: auto;
-		  	position: absolute;
-		  	top: 0; left: 0; bottom: 0; right: 0;
-  		}
-	</style>
+	
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+		
 </head>
 <body>
 	<div class="container">

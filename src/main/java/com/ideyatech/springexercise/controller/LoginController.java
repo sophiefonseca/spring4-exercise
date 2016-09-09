@@ -30,7 +30,7 @@ public class LoginController {
 		map.addAttribute("password", user.getPassword());
 		
 		if(user.getEmail().equals("admin@gmail.com") && user.getPassword().equals("123")) {
-			page = "add-user";
+			page = "user/list";
 		} else {
 			page = "home";
 		}
