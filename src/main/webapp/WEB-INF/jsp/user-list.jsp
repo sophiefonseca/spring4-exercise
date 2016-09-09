@@ -15,10 +15,13 @@
 <body>
 	<div class="container">
 		<div class="row">
-			<div class="form-group">
+			<div class="form-group pull-left">
 				<a href="/add-user" class="btn btn-primary">Add New User</a>
 			</div>
-			<div class="panel panel-primary">
+			<div class="form-group pull-right">
+				<a href="/" class="btn btn-default">Logout</a>
+			</div>
+			<div class="panel panel-primary" style="clear:both">
 				<div class="panel-heading">List of Users</div>
 				<div class="panel-body">
 					<table class="table table-striped">
@@ -46,11 +49,20 @@
 							        <h4 class="modal-title" id="myModalLabel">User Details</h4>
 							      </div>
 							      <div class="modal-body">
-							        <b>First Name:</b> ${user.firstName }<br />
-							        <b>Middle Name:</b> ${user.middleName }<br />
-							      </div>
-							      <div class="modal-footer">
-							        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							      	<dl class="dl-horizontal">
+									  <dt>First Name:</dt>
+									  <dd>${user.firstName }</dd>
+									  <dt>Middle Name:</dt>
+									  <dd>${user.middleName }</dd>
+									  <dt>Last Name:</dt>
+									  <dd>${user.lastName }</dd>
+									  <dt>Date of Birth:</dt>
+									  <dd>${user.birthdate }</dd>
+									  <dt>Email:</dt>
+									  <dd>${user.email }</dd>
+									  <dt>Role:</dt>
+									  <dd>${user.role }</dd>
+									</dl>
 							      </div>
 							    </div>
 							  </div>

@@ -56,7 +56,7 @@ public class AddUserController {
 	}
 	
 	@RequestMapping(value="/user/list")
-	public ModelAndView getEmployeeList(ModelMap model){
+	public ModelAndView getUserList(ModelMap model){
 		List<User> users = userRepository.findAll();
 		model.addAttribute("users", users);
 		return new ModelAndView("user-list");
